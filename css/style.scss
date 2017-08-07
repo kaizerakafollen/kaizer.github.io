@@ -1,0 +1,456 @@
+/* Переменная со шрифтом */
+$avenir: 'AvenirNext', sans-serif;
+
+/* Переменная с цветом*/
+$grey: #333333;
+$blue: #4fc6ef;
+$grey-back: #6e6e6e;
+
+
+
+/* Переменная размера шрифта */
+$main-size: 16px;
+$second-size: 14px;
+$big-size: 18px;
+
+
+/* Стили для body*/
+
+body {
+	background-color: #fff;
+	font-family: 'AvenirNext', sans-serif;
+	font-size: $main-size;
+}
+
+/* Header*/
+
+.header {
+	width: 100%;
+	background-color: #fff;
+	.header-container {
+		width: 1280px;
+		margin: 0 auto;
+		margin-top: 20px;
+		.logotype {
+			font-size: 20px;
+			.logo-link {
+				text-decoration: none;
+				color: $grey;
+			}
+			.logotype-message {
+				color: #50c5ee;
+				background: url(../img/shape.png) no-repeat center center;
+				padding: 10px;
+			}
+		}
+		.nav-main {
+			ul {
+				margin-top: 3px;
+				.nav-link {
+					display: inline-block;
+					border-right: 1px solid #000;
+					.main-link {
+						text-decoration: none;
+						color: #333;
+						padding-right: 20px;
+						padding-left: 10px;
+						line-height: 1;
+						font-size: $main-size;
+					}
+					.main-link:hover {
+						color: $blue;
+					}
+				}
+				.nav-link:last-child {
+					border-right: none;
+				}
+			}
+		}
+		.main-name {
+			.info-name {
+				.name {
+					display: inline-block;
+					padding-right: 25px;
+					margin: 0;
+				}
+				.link-name {
+					display: inline-block;
+					color: $blue;
+					text-decoration: underline;
+				}
+			}
+			.ava-foto {
+				position: absolute;
+			}
+		}
+		.main-section {
+			width: 100%;
+			margin-top: 50px;
+			background-color: #f9f9fa
+		}
+	}
+}
+
+/* Main-word*/
+
+.main-word {
+	width: 100%;
+	background-color: #f9f9fa;
+	.word-container {
+		width: 1280px;
+		margin: 0 auto;
+		margin-top: 50px;
+		.main-section {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			height: 20px;
+			.main-text {
+				display: inline-block;
+				a {
+					font-size: 16px;
+					text-decoration: none;
+					color: $blue;
+					line-height: 1;
+					display: inline-block;
+				}
+				a:hover {
+					color: $grey;
+				}
+			}
+			.my-consult {
+				display: inline-block;
+				padding-left: 5px;
+			}
+		}
+	}
+}
+
+/* Info-block */
+
+.info-block {
+	width: 100%;
+	background-color: #fff;
+	border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #eaeaea;
+	.info-container {
+		width: 1280px;
+		margin: 0 auto;
+		margin-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		a {
+			padding-right: 20px;
+			padding-left: 20px;
+			padding-bottom: 20px;
+			padding-top: 20px;
+			text-decoration: none;
+			color: $grey;
+		}
+		a:hover {
+			border-bottom: 2px solid $blue;
+			border-right: 1px solid #eaeaea;
+			border-left: 1px solid #eaeaea;
+		}
+	}
+}
+
+/* Personal-info*/
+
+.personal-info {
+	background-color: #f9f9fa;
+	width: 100%;
+	.personal-container {
+		width: 1290px;
+		margin: 0 auto;
+		/* accordion */
+		/* Style the buttons that are used to open and close the accordion panel */
+		button.accordion {
+			background-color: #fff;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			text-align: left;
+			border: none;
+			outline: none;
+			-webkit-transition: 0.4s;
+			-o-transition: 0.4s;
+			transition: 0.4s;
+			border-bottom: 1px solid #eaeaea;
+			.check-info {
+				display: inline-block;
+				margin-left: 990px;
+			}
+			.review-info {
+				display: inline-block;
+				margin-left: 1050px;
+			}
+			.gly-inf {
+				float: right;
+			}
+		}
+		button.accordion:first-child {
+			margin-top: 20px;
+		}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+	background-color: #fff;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-bottom: 30px;
+	background-color: white;
+	display: none;
+	.panel-info {
+		width: 800px;
+		border-bottom: 1px solid #eaeaea;
+		margin-bottom: 40px;
+	}
+	.log-info {
+		margin-bottom: 30px;
+		display: inline-block;
+		padding-right: 200px;
+	}
+	.place-info {
+		display: inline-block;
+	}
+	.my-place {
+		display: inline-block;
+		padding-left: 20px;
+	}
+}
+}
+.section-form-1 {
+	display: inline-block;
+}
+.form-enter-info-1 {
+	display: inline-block;
+	.text-name-info {
+		span {
+			color: $blue;
+		}
+	}
+	.info-type {
+		padding: 10px 50px 10px 10px;
+		width: 330px;
+		margin-bottom: 50px;
+		border-radius: 3px;
+		border: 1px solid #b8b8b8;
+		outline: none;
+	}
+	.info-type-2 {
+		margin-bottom: 100px;
+	}
+	.btn-button {
+		padding: 13px 60px 13px 60px;
+		font-family: $avenir;
+		font-size: 20px;
+		background-color: $blue;
+		color: #fff;
+	}
+}
+.section-form-2 {
+	display: inline-block;
+}
+.form-enter-info-2 {
+	display: inline-block;
+	.text-name-info {
+		span {
+			color: $blue;
+		}
+	}
+	.info-type {
+		padding: 10px 50px 10px 10px;
+		width: 330px;
+		margin-bottom: 50px;
+		border-radius: 3px;
+		border: 1px solid #b8b8b8;
+		outline: none;
+	}
+	.info-type-2 {
+		margin-bottom: 15px;
+	}
+	.help-text-info {
+		margin-bottom: 63px;
+		color: #cbcbcb;
+	}
+	.btn-button {
+		padding: 13px 60px 13px 60px;
+		font-family: $avenir;
+		font-size: 20px;
+		background-color: $blue;
+		color: #fff;
+	}
+	.btn-green {
+		background-color: #7fd41b;
+	}
+}
+.section-form-3 {
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	.one-square {
+		position: relative;
+		width: 220px;
+		height: 220px;
+		bottom: 100px;
+		margin: 0 auto;
+		background: #fff;
+		border-radius: 50%;
+		border: 1px solid #ededed;
+		.two-square {
+			position: absolute;
+			width: 180px;
+			height: 180px;
+			top: 20px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background: #f9f9fb;
+			border-radius: 50%;
+			border: 1px solid #ededed;
+			.foto-ava {
+				text-align: center;
+				margin-top: 20%;
+				span {
+						color: #a2a2a2;
+					}
+				.main-ava-foto {
+					position: absolute;
+					bottom: 0;
+					right: 0px;
+					height: 180px;
+					border-radius: 50%;
+				    border: none;
+				    width: 180px;
+				    background-size: cover;
+				    outline: none;
+				}
+				.text-ava {
+					margin-top: 20px;
+					color: #cccccd;
+				}
+}
+}
+}
+.file-upload {
+	position: relative;
+	overflow: hidden;
+	width: 55%;
+	bottom: 70px;
+	height: 55px;
+	background: #4fc6ef;
+	border-radius: 3px;
+	padding: 8px 2px;
+	color: #fff;
+	text-align: center;
+}
+ /* .file-upload:hover {*/
+ /* 	background: #4fc6ef;*/
+ /* }*/
+ .file-upload input[type="file"]{
+    display: none; /* Обязательно скрываем настоящий Input File */
+}
+.file-upload label {
+     /* Растягиваем label на всю возможную площадь блока .file-upload */
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     cursor: pointer;
+ }
+ .file-upload span {
+     line-height: 55px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+ }
+ .file-text-upload {
+ 	position: relative;
+ 	bottom: 50px;
+ 	color: #b2b2b2;
+ }
+ .btn-button {
+ 	position: relative;
+ 	bottom: 26px;
+ 	padding: 13px 60px 13px 60px;
+ 	font-family: $avenir;
+ 	font-size: 20px;
+ 	background-color: $blue;
+ 	color: #fff;
+ }
+ .btn-red {
+ 	background-color: #d75554;
+ }
+}
+.footer {
+	width: 100%;
+	background-color: #f9f9fa;
+	.footer-container {
+		width: 1280px;
+		margin: 0 auto;
+		.vk-theme {
+			display: inline-block;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			.vkontakte-img {
+				margin-right: 30px;
+			}
+		}
+		.footer-nav {
+			text-align: right;
+			li {
+				display: inline-block;
+				margin-top: 50px;
+				a {
+					text-decoration: none;
+					color: #505051;
+					border-right: 1px solid #535353;
+					padding-right: 17px;
+					padding-left: 17px;
+				}
+			}
+			li:last-child {
+				a {
+					border: none;
+				}
+			}
+			a:hover {
+				color: $blue;
+			}
+		}
+	} 
+}
+}
+
+
+
+
+/* footer-block */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Подключаем Шрифты */
+
+@font-face {
+	font-family: 'AvenirNext';
+	src: url(../fonts/AvenirNext-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
